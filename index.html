@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World movies</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .card-img-top {
+      width: 600px;
+      height: 350px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section id="section">
+      <div class="container">
+        <h1 class="h3 text-center my-3">World movies</h1>
+
+        <form class="search-form-js mx-auto d-flex" method="post">
+          <label for="site-search-input">Iltimos kinolarning ishlab chiqarilgan yilini kiriting:</label>
+
+          <input class="search-input-js w-100 fst-normal fw-semibold" type="number" name="search" id="site-search-input" autocomplete="off" placeholder="Search"/>
+
+          <button class="btn bg-info rounded-0" type="submit">Find</button>
+        </form>
+
+        <ul class="js-movies-list list-unstyled d-flex flex-wrap justify-content-around">
+          
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <template id="template-movies-element">
+    <li class="card my-3 pb-2 d-flex" style="max-width: 600px">
+      <img class="card-img-top card-img text-center" src="/photo_2022-08-12_22-13-35.jpg" alt="Image">
+
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title my-2">Card title</h5>
+
+        <div class="full-title d-block fw-semibold">Full Title:</div>
+
+        <span class="movie-year d-block my-2">Movie year: 2001</span>
+
+        <span class="categories d-block">Categories: Hd</span>
+
+        <span class="rating">Rating: 7</span>
+
+        <span class="runtime my-2">Run Time: 60 daqiqa</span>
+
+        <span class="language">Language: O'zbek</span>
+
+        <a class="youtube-link mt-2">Link: jrgvubvury</a>
+
+        <hr>
+
+        <p class="card-text-summary my-2">
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </p>
+      </div>
+    </li>
+  </template>
+
+  <script src="./js/movies.js"></script>
+  <script src="./js/utilits.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
